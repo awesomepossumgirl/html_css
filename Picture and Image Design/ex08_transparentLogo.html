@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html, body {
+            height: 500px;
+        }
+        
+        img {
+            mix-blend-mode: multiply;
+            width: 400px;
+            height: 400px;
+        }
+
+        .logo-background {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url("/Images/pic08_background2.jpg");
+            background-size: auto 100%;
+            background-repeat: no-repeat;
+            background-position: center center;
+            filter: saturate(50%);
+        }
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo-background">
+        <div class="logo">
+            <img src="/Images/pic08_logo.png" alt="">
+        </div>
+    </div>
+</body>
+</html>

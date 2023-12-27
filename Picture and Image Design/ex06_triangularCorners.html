@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .pic {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .pic::before,
+        .pic::after {
+            content: '';
+            position: absolute;
+            width: 0px;
+            height: 0px;
+        }
+
+        .pic::before {
+            top: -10px;
+            right: -10px;
+            border-top: 30px solid #ea987e;
+            border-right: 30px solid #ea987e;
+            border-bottom: 30px solid rgba(0 0 0 / 0);
+            border-left: 30px solid rgba(0 0 0 / 0);
+        }
+
+        .pic::after {
+            bottom: -10px;
+            left: -10px;
+            border-top: 30px solid rgba(0 0 0 / 0);
+            border-right: 30px solid rgba(0 0 0 / 0);
+            border-bottom: 30px solid #ea987e;
+            border-left: 30px solid #ea987e;
+        }
+    </style>
+</head>
+<body>
+    <div class="pic">
+        <img src="Images/pic06.png" alt="">
+    </div>
+</body>
+</html>
