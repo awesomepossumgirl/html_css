@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .heading {
+            position: absolute;
+            font-size: 36px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .heading::before,
+        .heading::after {
+            content:'';
+            width: 30px;
+            height: 30px;
+        }
+        .heading::before {
+            margin: -80px 30px 0 0;
+            border-top: 15px solid #e5c046;
+            border-left: 15px solid #c4990a;
+        }
+        .heading::after {
+            margin: 0 0 -80px 30px;
+            border-right: 15px solid #c4990a;
+            border-bottom: 15px solid #e5c046;
+        }
+    </style>
+</head>
+<body>
+    <h2 class="heading">채용 정보에 관하여</h2>
+</body>
+</html>

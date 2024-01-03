@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .heading {
+            position: relative;
+            padding: 1em;
+            font-size: 36px;
+            border-bottom: 2px solid #e5c046;
+        }
+        .heading span {
+            position: relative;
+            z-index: 2;
+        }
+        .heading::before {
+            content: attr(data-num);
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            color: rgba(229 192 70/ .4);
+            font-size: 68px;
+            font-weight: 800;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <h2 class="heading" data-num="01"><span>채용 정보에 관하여</span></h2>
+</body>
+</html>

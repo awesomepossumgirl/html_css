@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .heading {
+            position: relative;
+            padding-left: 2em;
+            padding-bottom: 1em;
+            font-size: 36px;
+        }
+
+        .heading::before {
+            content: attr(data-number);
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            padding-bottom: 5px;
+            color: #e5c046;
+            font-size: 32px;
+            font-weight: 800;
+            border-bottom: 1px solid #e5c046;
+        }
+    </style>
+</head>
+<body>
+    <h2 class="heading" data-number="01">채용 정보에 관하여</h2>
+</body>
+</html>

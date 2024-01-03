@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .heading {
+            position: relative;
+            padding-top: 65px;
+            padding-bottom: 50px;
+            font-size: 26px;
+            text-align: center;
+        }
+        .heading span {
+            position: relative;
+            z-index: 2;
+        }
+        .heading::before {
+            content: attr(data-en);
+            position: absolute;
+            top: 0px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: rgba(229 192 70 / .3);
+            font-size: 80px;
+            font-style: italic;
+            font-family: 'Montserrat', sans-serif;
+            z-index: 1;
+        }
+        .heading::after {
+            content:'';
+            position: absolute;
+            bottom: 0px;
+            left: 50%;
+            transform: translate(-50%) rotate(30deg);
+            width: 1px;
+            height: 40px;
+            background-color: #e5c046;
+        }
+    </style>
+</head>
+<body>
+    <h2 class="heading" data-en="Recruit"><span>채용 정보에 관하여</span></h2>
+</body>
+</html>
