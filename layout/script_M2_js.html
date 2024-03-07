@@ -9,6 +9,7 @@
         * {
             margin: 0;
             padding: 0;
+            font-family: 'GmarketSans';
         }
         li {
             list-style: none;
@@ -32,50 +33,8 @@
         }
         #header .nav {
             width: 80%;
-            height: 100px;
             background-color: #e3e3e3;
         }
-        /*nav*/
-        .nav > ul {
-            display: flex;
-            justify-content: right;
-            margin-top: 30px;
-        }
-        .nav > ul > li {
-            position: relative;
-        }
-        .nav > ul > li > a {
-            display: inline-block;
-            padding: 10px 50px;
-        }
-        .nav > ul > li > a:hover {
-            background-color: #696969;
-        }
-        .nav > ul > li > ul {
-            position: absolute;
-            left: 0;
-            top: 38px;
-            width: 100%;
-            text-align: center;
-            display: none;
-        }
-        .nav > ul > li > ul > li > a {
-            display: inline-block;
-            padding: 10px;
-            background-color: #c1c1c1;
-            width: 100%;
-            box-sizing: border-box;
-        }
-        .nav > ul > li > ul > l > a:hover {
-            background-color: #8f8f8f;
-        }
-        /* 자바스크립트 CSS */
-        .nav > ul > li > ul {
-            display: block;
-            height: 0;
-            overflow: hidden;
-            transition: all 600ms;
-        } 
         #slider {
             width: 100%;
             height: 300px;
@@ -119,89 +78,145 @@
             height: 100px;
             background-color: #9d9d9d;
         }
+        /* nav */
+        .nav > ul {
+            display: flex;
+            justify-content: right;
+            margin-top: 30px;
+        }
+        .nav > ul > li {
+            position: relative;
+        }
+        .nav > ul > li > a {
+            display: inline-block;
+            padding: 10px 50px;
+            background-color: #b0b0b0;
+        }
+        .nav > ul > li > a:hover {
+            background-color: #696969;
+        }
+        .nav > ul > li > ul {
+            position: absolute;
+            left: 0; 
+            top: 38px;
+            width: 100%;
+            text-align: center;
+            display: none;
+        }
+        .nav > ul > li > ul > li > a {
+            display: inline-block;
+            padding: 10px;
+            background-color: #c1c1c1;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .nav > ul > li > ul > li > a:hover {
+            background-color: #8f8f8f;
+        }
+        /* 자바스크립트 CSS */
+        .nav > ul > li > ul {
+            display: block;
+            height: 0;
+            overflow: hidden;
+            transition: all 600ms;
+        }
     </style>
 </head>
 <body>
-    <div id="wrap">
-        <div id="header">
-            <div class="logo"></div>
-            <nav class="nav">
-                <ul>
-                    <li>
-                        <a href="#">메뉴1</a>
-                        <ul class="submenu">
-                            <li><a href="#">서브메뉴1-1</a></li>
-                            <li><a href="#">서브메뉴1-2</a></li>
-                            <li><a href="#">서브메뉴1-3</a></li>
-                            <li><a href="#">서브메뉴1-4</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">메뉴2</a>
-                        <ul class="submenu">
-                            <li><a href="#">서브메뉴2-1</a></li>
-                            <li><a href="#">서브메뉴2-2</a></li>
-                            <li><a href="#">서브메뉴2-3</a></li>
-                            <li><a href="#">서브메뉴2-4</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">메뉴3</a>
-                        <ul class="submenu">
-                            <li><a href="#">서브메뉴3-1</a></li>
-                            <li><a href="#">서브메뉴3-2</a></li>
-                            <li><a href="#">서브메뉴3-3</a></li>
-                            <li><a href="#">서브메뉴3-4</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">메뉴4</a>
-                        <ul class="submenu">
-                            <li><a href="#">서브메뉴4-1</a></li>
-                            <li><a href="#">서브메뉴4-2</a></li>
-                            <li><a href="#">서브메뉴4-3</a></li>
-                            <li><a href="#">서브메뉴4-4</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
+    <body>
+        <div id="wrap">
+            <div id="header">
+                <div class="logo"></div>
+                <nav class="nav">
+                    <ul>
+                        <li>
+                            <a href="#">메뉴1</a>
+                            <ul class="submenu">
+                                <li><a href="#">서브메뉴1-1</a></li>
+                                <li><a href="#">서브메뉴1-2</a></li>
+                                <li><a href="#">서브메뉴1-3</a></li>
+                                <li><a href="#">서브메뉴1-4</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">메뉴2</a>
+                            <ul class="submenu">
+                                <li><a href="#">서브메뉴2-1</a></li>
+                                <li><a href="#">서브메뉴2-2</a></li>
+                                <li><a href="#">서브메뉴2-3</a></li>
+                                <li><a href="#">서브메뉴2-4</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">메뉴3</a>
+                            <ul class="submenu">
+                                <li><a href="#">서브메뉴3-1</a></li>
+                                <li><a href="#">서브메뉴3-2</a></li>
+                                <li><a href="#">서브메뉴3-3</a></li>
+                                <li><a href="#">서브메뉴3-4</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">메뉴4</a>
+                            <ul class="submenu">
+                                <li><a href="#">서브메뉴4-1</a></li>
+                                <li><a href="#">서브메뉴4-2</a></li>
+                                <li><a href="#">서브메뉴4-3</a></li>
+                                <li><a href="#">서브메뉴4-4</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- //header -->
+    
+            <div id="slider">
+            </div>
+            <!-- //slider -->
+    
+            <div id="contents">
+                <div class="content1"></div>
+                <div class="content2"></div>
+                <div class="content3"></div>
+            </div>
+            <!-- //contents -->
+    
+            <div id="footer">
+                <div class="footer1"></div>
+                <div class="footer2"></div>
+                <div class="footer3"></div>
+            </div>
+            <!-- //footer -->
         </div>
-        <!-- //header -->
+        <!-- //wrap -->
+    </body>
 
-        <div id="slider"></div>
-        <!-- //slider -->
-
-        <div id="contents">
-            <div class="content1"></div>
-            <div class="content2"></div>
-            <div class="content3"></div>
-        </div>
-        <!-- //contents -->
-
-        <div id="footer">
-            <div class="footer1"></div>
-            <div class="footer2"></div>
-            <div class="footer3"></div>
-        </div>
-        <!-- //footer -->
-
-    </div>
-    <!-- //wrap -->
-</body>
-<script>
-    window.onload = function() {
-        let navList = document.querySelector(".nav > ul");
-
-        navList.addEventListener("mouseover",function(){
-            navList.querySelectorAll(".submenu").forEach(sub=>{
-                sub.style.height="155px";
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- <script>
+        $(function(){
+            $(".nav > ul > li").mouseover(function(){
+                $(".nav > ul > li > ul").stop().slideDown();
+            });
+            $(".nav > ul > li").mouseout(function(){
+                $(".nav > ul > li > ul").stop().slideUp();
             });
         });
-        navList.addEventListener("mouseout",function(){
-            navList.querySelectorAll(".submenu").forEach(sub=>{
-                sub.style.height="0px";
-            })
-        });
-    }
-</script>
+    </script> -->
+    <script>
+        window.onload = function(){
+            let navList = document.querySelector(".nav > ul");
+
+            navList.addEventListener("mouseover", function(){
+                navList.querySelectorAll(".submenu").forEach(sub => {
+                    sub.style.height = "155px";
+                });
+            });
+            navList.addEventListener("mouseout", function(){
+                navList.querySelectorAll(".submenu").forEach(sub => {
+                    sub.style.height = "0px";
+                });
+            });
+        }
+    </script>
+</body>
 </html>
