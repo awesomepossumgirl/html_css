@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .pic {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .pic::after {
+            content: '';
+            position: absolute;
+            top: -10px; /* Extend 10px above the border */
+            left: -10px; /* Extend 10px to the left of the border */
+            width: calc(100% + 20px); /* Increase the width by 20px on each side */
+            height: calc(100% + 20px); /* Increase the height by 20px on each side */
+            border-image-source: repeating-linear-gradient(
+                45deg,
+                #ea987e 0px, #ea987a 2px,
+                rgba(0, 0, 0, 0) 2px, rgba(0, 0, 0, 0) 7px
+            );
+            border-image-slice: 20;
+            border-width: 20px;
+            border-image-repeat: round;
+            border-style: solid;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="pic">
+        <img src="Images/pic05.png" alt="">
+    </div>
+</body>
+</html>
